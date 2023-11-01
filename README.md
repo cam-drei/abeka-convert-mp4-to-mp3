@@ -1,7 +1,14 @@
 ### Use:
-  After download ruby file, edit the path to your local in method "download_mp4_files"
-  ex: open("/Users/dungluu/thuydung/projects/abeka/convert-mp4-to-mp3/#{name}", 'wb') do |file|
-  ===> open("/Users/vinhluu/abeka/#{name}", 'wb') do |file|
+Run ruby file in Terminal with syntax:
+- For download abeka_k4_language_development mp3 files:
+  ```
+  ruby abeka_k4_language_development_mp4_to_mp3.rb
+  ```
+
+- For download abeka_k4_language_development mp3 files:
+  ```
+  ruby abeka_k4_skill_development_mp4_to_mp3.rb
+  ```
 
 ### Introduce: this file convert video to mp3 by steps
 1. named_mp4_files:

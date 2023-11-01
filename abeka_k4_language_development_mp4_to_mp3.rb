@@ -187,7 +187,7 @@ end
 
 def download_mp4_files
   @mp4_files.each do |name, link|
-    open("/Users/dungluu/thuydung/projects/abeka/convert-mp4-to-mp3/#{name}", 'wb') do |file|
+    open("#{name}", 'wb') do |file|
       file << URI.open("#{link}").read
     end
   end

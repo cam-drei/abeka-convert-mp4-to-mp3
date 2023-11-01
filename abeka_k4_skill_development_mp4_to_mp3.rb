@@ -161,7 +161,7 @@ end
 
 def download_mp4_files
   @mp4_files.each do |name, link|
-    open("/Users/dungluu/thuydung/projects/abeka/convert-mp4-to-mp3/#{name}", 'wb') do |file|
+    open("#{name}", 'wb') do |file|
       file << URI.open("#{link}").read
     end
   end
@@ -175,7 +175,7 @@ def cleanup_mp4_files
   FileUtils.rm Dir.glob('*.mp4')
 end
 
-# named_mp4_files
-# download_mp4_files
+named_mp4_files
+download_mp4_files
 convert_to_mp3
 cleanup_mp4_files
